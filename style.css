@@ -1,0 +1,179 @@
+#loginPanel .panelContent {
+    padding-top: 0;
+    position: relative;
+    color: #EEE;
+    background-color: #38abe3;
+}
+
+.LoginPanel form {
+    padding: 16px 0;
+    margin: 0 auto;
+    line-height: 20px;
+    position: relative;
+    max-width: 800px;
+}
+
+.Wrap {
+    margin: 0 10px;
+}
+
+.LoginPanel a {
+    color: rgba(255, 255, 255, .8);
+}
+
+.LoginPanel a:hover {
+    text-decoration: underline;
+}
+
+a.ForgotPassword {
+    font-size: 11px;
+    margin: 0px;
+}
+
+.ctrlUnit {
+    margin: 0;
+    border: none;
+}
+
+.ctrlUnit>dt {
+    padding-top: 4px;
+    padding-right: 15px;
+    text-align: right;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 32%;
+    float: left;
+}
+
+.ctrlUnit>dd {
+    position: relative;
+    padding-top: 4px;
+    float: left;
+    width: 68%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 30px;
+}
+
+.LoginPanel .InputBox {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Lato, Helvetica, sans-serif;
+    color: rgb(241, 241, 241);
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 5px 3px;
+    margin-bottom: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    border-radius: 2px;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 30px;
+}
+
+.LoginPanel .InputBox:focus {
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0% 0%;
+}
+
+.ctrlUnit > dd .InputBox {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    min-width: 100%;
+}
+
+.ctrlUnit > dd > input,
+.ctrlUnit > dd > select,
+.ctrlUnit > dd > textarea,
+.ctrlUnit>dd>ul {
+    margin-top: -4px;
+}
+
+.ctrlUnit>dd>*>li {
+    margin: 4px 0 8px;
+    padding-left: 1px;
+}
+
+.LoginPanel .Button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+.LoginPanel #Form_SignIn {
+    margin-bottom: 10px;
+}
+
+.LoginPanel .Button:Hover {
+    color: #333;
+    background-color: #E6E6E6;
+    border-color: #ADADAD;
+}
+
+.LoginPanel input[type="radio"] {
+    margin: 0px;
+}
+
+.LoginPanel input.InputBox.disabled {
+    color: rgb(127, 127, 127);
+    background-color: #000;
+    border-style: dashed;
+}
+
+.Register .FormTitleWrapper {
+    float: none;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.Register .FormTitleWrapper form ul li label.CheckBoxLabel {
+    font-size: 12px;
+    font-weight: normal;
+    width: auto;
+}
+
+.Register .FormTitleWrapper form ul li label {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 0 0;
+    display: block;
+}
+
+.Register .FormWrapper {
+    background: #f7f7f7;
+    background: rgba(0, 0, 0, 0.03);
+    margin: 0;
+    padding: 20px;
+}
