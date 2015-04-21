@@ -9,6 +9,7 @@ A Sliding Login Form for Vanilla Forums
  1. Change how the registration form is displayed
   1. Change the ajax .load() to something that will allow me to carry over the captcha and password stregnth meter.
 2. Polish Code
+3. Make the login compatible with mobile and small displays
 
 After registration is done the plugin is pretty much finished.
 
