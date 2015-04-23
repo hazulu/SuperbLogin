@@ -76,9 +76,11 @@ jQuery(function ($) {
                     } else {
                         $('#Body #Form_Name').val(name);
                     }
-                    
+
                     $("#Body").addClass('Register');
                 });
+                closeLogin();
+            } else {
                 closeLogin();
             }
         });
