@@ -47,6 +47,12 @@ jQuery(function ($) {
 
         $(".SignInSlideDown").click(function () {
             openLogin();
+            
+            $("html, body").animate({
+                scrollTop: 0
+            }, 300);
+            
+            $('#Form_Email').focus();
         });
 
         $('input[type=radio][name=register]').click(function () {

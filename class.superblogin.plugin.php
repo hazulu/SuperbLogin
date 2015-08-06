@@ -3,9 +3,8 @@
 $PluginInfo['SuperbLogin'] = array(
     'Name' => 'Superb Login',
     'Description' => 'Changes the login popup to a sliding login panel.',
-    'Version' => '0.1',
+    'Version' => '0.2',
     'RequiredTheme' => false,
-    'RegisterPermissions' => array('SuperbLogin.Settings.Manage'),
     'MobileFriendly' => true,
     'HasLocale' => false,
     'Author' => 'Gianni DaSilva',
@@ -15,9 +14,10 @@ $PluginInfo['SuperbLogin'] = array(
 class SuperbLogin extends Gdn_Plugin {
 
     public function Base_Render_Before($Sender) {
-        $Sender->AddCssFile('plugins/SuperbLogin/style.css');
-        $Sender->AddJsFile('plugins/SuperbLogin/script.js');
-        $Sender->AddJsFile('https://code.jquery.com/ui/1.11.4/jquery-ui.min.js');
+        if ($Session->UserID > 0)  return;
+        $Sender->AddCssFile('plugins/SuperbLogin/design/style.css');
+        $Sender->AddJsFile('plugins/SuperbLogin/js/script.js');
+        $Sender->AddJsFile('jquery-ui-1.8.17.custom.min.js');
     }
 
     public function Setup() {
@@ -40,13 +40,7 @@ class SuperbLogin extends Gdn_Plugin {
         Gdn::Session()->EnsureTransientKey(); // make sure we have a session
         $AssetName = GetValueR('EventArguments.AssetName', $Sender);
         if ($AssetName == "Head"){
-            echo "<div id='loginPanel' style='position: relative; z-index: 9999;'>";
-            echo "<div class='panelContent'>";
-            echo "<div class='pOuter' style='overflow: hidden; height: 0px;'>";
-            echo "<div class='pInner' style='margin: -215px auto auto;'>".$Sender->FetchView($this->GetView('view.php'))."</div>";
-            echo "</div>";
-            echo "</div>";
-            echo "</div>";
+            echo $Sender->FetchView($this->GetView('view.php'));
         }
     }
 
